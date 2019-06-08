@@ -9,5 +9,8 @@
         <module name="collections_ex2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="collections_ex2" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
