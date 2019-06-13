@@ -14,7 +14,9 @@ public class Autostrada {
 
 
     public void wjazdPojazduNaAutostradę(String numerRejestracyjny, TypPojazdu typPojazdu) {
+
         InformacjeOPojezdzie informacjeOPojezdzie = new InformacjeOPojezdzie(numerRejestracyjny, typPojazdu, LocalDateTime.now());
+
         mapaPojazdow.put(numerRejestracyjny, informacjeOPojezdzie);
         System.out.println("Pojazd: " + informacjeOPojezdzie + ", wjechał na autostradę.");
     }
@@ -58,6 +60,7 @@ public class Autostrada {
         System.out.println("Pojazd: " + numerRejestracyjny + " opuszcza autostradę, do zapłaty: " + doZapłaty);
         return doZapłaty;
     }
+
 
 
 }

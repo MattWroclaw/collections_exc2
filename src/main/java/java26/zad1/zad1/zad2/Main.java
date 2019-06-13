@@ -22,7 +22,7 @@ public class Main {
             if (słowa[0].equalsIgnoreCase("wjazd")) {
                 // poza słowem "wjazd" komenda wymaga 2 parametrów, więc długość tablicy to minimum 3
                 if (słowa.length >= 3) {
-                    String nrRej = słowa[1];
+                    String nrRejaaaa = słowa[1];
                     String slowoTypPojazdu = słowa[2];
 
                     // jeśli posiadacie string który reprezentuje jakiegoś enuma
@@ -31,7 +31,7 @@ public class Main {
                     try {
                         TypPojazdu typ = TypPojazdu.valueOf(slowoTypPojazdu.toUpperCase());
 
-                        autostrada.wjazdPojazduNaAutostradę(nrRej, typ);
+                        autostrada.wjazdPojazduNaAutostradę(nrRejaaaa, typ);
                     }catch (IllegalArgumentException iae){
                         // wyjątek rzuci się jeśli zamiast np. Osobowy zrobię literówkę lub wpiszę słowo którego enuma nie mamy
                         // np. hulajnoga
